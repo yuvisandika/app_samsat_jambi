@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/i1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="#fff"
+            android:layout_width="220dp"
+            android:layout_height="220dp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_maps"/>
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_below="@id/i1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#fff"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Aplikasi Sistem Informasi Geografis"
+            />
+        <TextView
+            android:id="@+id/t2"
+            android:layout_below="@id/t1"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#fff"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Lokasi Samsat"/>
+        <TextView
+            android:id="@+id/t3"
+            android:layout_below="@id/t2"
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#fff"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Kota Jambi"/>
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_above="@+id/btn_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#2196F3"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Masuk Kehalaman Utama"/>
+
+        <TextView
+            android:id="@+id/btn_admin"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#ff0000"
+            android:background="@drawable/rounded"
+            android:textColor="#fff"
+            android:text="\u00a9 VOID"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:orientation="vertical">
+
+    <!--bagian atas-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/samsat_logo"/>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#2196F3"/>
+        <View
+            android:id="@+id/v2"
+            android:layout_below="@id/imgj1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#2196F3"/>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_below="@+id/v1"
+            android:layout_toRightOf="@+id/imgj1"
+            android:layout_toLeftOf="@+id/imgj2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="KONTAK KAMI"/>
+
+        <ImageView
+            android:id="@+id/imgj1"
+            android:layout_below="@+id/v1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/jambi_logo"/>
+
+        <ImageView
+            android:id="@+id/imgj2"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/v1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/jambi_logo"/>
+
+    </RelativeLayout>
+
+    <!--menu 1 web-->
+    <RelativeLayout
+        android:id="@+id/km1"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_web"
+            app:tint="#fff" />
+
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Website"/>
+
+    </RelativeLayout>
+
+    <!--menu 2 cs-->
+    <RelativeLayout
+        android:onClick="onDialBUtton"
+        android:id="@+id/km2"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_phone"
+            app:tint="#fff" />
+
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Call Center"/>
+
+    </RelativeLayout>
+
+    <!--menu 3 wa-->
+    <RelativeLayout
+        android:id="@+id/km3"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#4CAF50"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_wa"
+            app:tint="#fff" />
+
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="WhatsApp"/>
+
+    </RelativeLayout>
+
+    <!--menu 4 ig-->
+    <RelativeLayout
+        android:id="@+id/km4"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#E91E63"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_ig"
+            app:tint="#fff" />
+
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Instagram"/>
+    </RelativeLayout>
+
+    <!--menu 5 sp-->
+    <RelativeLayout
+        android:id="@+id/km5"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_wbs"
+            app:tint="#fff" />
+
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Whistleblowing System"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "513030027786",
+    "project_id": "database-5e13a",
+    "storage_bucket": "database-5e13a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513030027786:android:b944b5de341c7d261a3df3",
+        "android_client_info": {
+          "package_name": "com.example.app_samsat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513030027786-g3g6s8pq94h3nh6etdgq6872dvoa2b3o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app_samsat",
+            "certificate_hash": "826488fd46ac703fb7819bc7cd8e71fc455e3120"
+          }
+        },
+        {
+          "client_id": "513030027786-i8e48fnoc04bske486nur4u5ohmg19j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB90YawVSPFFqKR0YBgzRTcGuI7c_gZ45E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513030027786-i8e48fnoc04bske486nur4u5ohmg19j0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
